@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supportive Environment for Children with ASD</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f0f2; /* Soft, calming background color */
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #5c9dc8; /* Calming blue color */
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sensory-zone {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .zone {
+            border: 2px solid #a8d8e4; /* Soft border color */
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #ffffff; /* White background for zones */
+            transition: transform 0.3s;
+        }
+
+        .zone:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        .zone h3 {
+            color: #3a5f83; /* Darker blue for zone titles */
+        }
+
+        .zone-button, .control-button {
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #5c9dc8; /* Button color */
+            color: #ffffff; /* Button text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .zone-button:hover, .control-button:hover {
+            background-color: #4a8ba3; /* Darker shade on hover */
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Your Safe Space</h1>
+        </header>
+        <main>
+            <section class="sensory-zone">
+                <h2>Sensory Zones</h2>
+                <div class="zone" id="calm-zone">
+                    <h3>Calm Zone</h3>
+                    <p>Relax with soft colors and calming sounds.</p>
+                    <button class="zone-button" onclick="enterZone('Calm Zone')">Enter Calm Zone</button>
+                </div>
+                <div class="zone" id="activity-zone">
+                    <h3>Activity Zone</h3>
+                    <p>Engage with interactive activities and games.</p>
+                    <button class="zone-button" onclick="startActivity()">Start Activity</button>
+                </div>
+                <div class="zone" id="creative-zone">
+                    <h3>Creative Zone</h3>
+                    <p>Express yourself through art and music.</p>
+                    <button class="zone-button" onclick="createNow()">Create Now</button>
+                </div>
+            </section>
+            <section class="controls">
+                <h2>Quick Access</h2>
+                <button class="control-button" onclick="toggleMusic()">Music On/Off</button>
+                <button class="control-button" onclick="dimLights()">Lights Dim</button>
+                <button class="control-button" onclick="getHelp()">Help</button>
+            </section>
+        </main>
+        <footer>
+            <p>Designing for comfort and safety</p>
+        </footer>
+    </div>
+
+    <script>
+        function enterZone(zone) {
+            alert(`Entering the ${zone}. Enjoy your time!`);
+        }
+
+        function startActivity() {
+            alert('Activity Zone: Let’s have some fun with games!');
+        }
+
+        function createNow() {
+            alert('Creative Zone: Time to express yourself!');
+        }
+
+        function toggleMusic() {
+            alert('Music toggled on/off!');
+        }
+
+        function dimLights() {
+            alert('Lights are now dimmed for comfort.');
+        }
+
+        function getHelp() {
+            alert('Help: If you need assistance, please ask a caregiver!');
+        }
+    </script>
+</body>
+</html>
